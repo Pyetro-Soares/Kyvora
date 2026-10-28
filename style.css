@@ -13,8 +13,22 @@
     --cor6: #333333;
     --cor7: #C59A3D;
 }
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(arquivos/blurry-gradient-haikei.svg);
+}
 nav{
-    font-family: 'inter';
+    border-bottom: 2px solid #333333;
+    background-color: var(--cor4);
+    position: sticky;
+    left: 0;
+    top: 0;
+}
+nav>a>img{
+    width: 60px;
+    height: 60px;
 }
 header{
     margin-bottom: 5px;
@@ -30,6 +44,8 @@ main{
     margin-top: 5px;
 }
 h1{
+    background-color: var(--cor6);
+    color: var(--cor3);
     font-size: 2.3em;
     padding-left: 20px;
     padding-top: 5px;
@@ -43,15 +59,23 @@ h1{
     margin-right: 30px;
 }
 .texto>h2{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 5px;
+    color: var(--cor3);
+    background-color: var(--cor6);
     font-size: 1.9em;
     font-weight: 500;
     font-family: 'Work Sans';
 }
 .texto>p{
+    color: var(--cor1);
     margin-left: 50px;
     background-color: transparent;
     font-family: 'Nunito';
     width: 50vw;
+    font-size: 1.3em;
 }
 .imagem{
     z-index: 10000;
@@ -70,5 +94,11 @@ h1{
     background-image: url(arquivos/tony-para-cima.png);
 }
 #imagem3{
-    background-image: url(arquivos/tony-sem-back.png);
+    background-image: url(arquivos/tony1.png);
+}
+#imagem4{
+    background-image: url(arquivos/tony-biscoitando.jpg);
+}
+#imagem5{
+    background-image: url(arquivos/tony5.jpg);
 }
