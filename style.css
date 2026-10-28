@@ -1,5 +1,74 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --cor1: #0B0B0B;
+    --cor2: #171717;
+    --cor3: #F2F2F2;
+    --cor4: #E31B23;
+    --cor5: #B5121B;
+    --cor6: #333333;
+    --cor7: #C59A3D;
+}
 nav{
     font-family: 'inter';
+}
+header{
+    margin-bottom: 5px;
+    width: 79vw;
+    height: 60vh;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    background-image: url(arquivos/header-dirigivel.jpg);
+}
+main{
+    margin-top: 5px;
+}
+h1{
+    font-size: 2.3em;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    display: inline;
+    font-family: 'Montserrat';
+}
+.texto{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.texto>h2{
+    font-size: 1.9em;
+    font-weight: 500;
+    font-family: 'Work Sans';
+}
+.texto>p{
+    margin-left: 50px;
+    background-color: transparent;
+    font-family: 'Nunito';
+    width: 50vw;
+}
+.imagem{
+    z-index: 10000;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vw;
+    width: 40vw;
+    float: right;
+    margin-right: 40px;
+}
+#imagem1{
+    background-image: url(arquivos/tony-para-baixo.png);
+}
+#imagem2{
+    background-image: url(arquivos/tony-para-cima.png);
+}
+#imagem3{
+    background-image: url(arquivos/tony-sem-back.png);
 }
