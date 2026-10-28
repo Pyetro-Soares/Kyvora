@@ -5,10 +5,101 @@
     margin: 0px;
 }
 :root{
-    --cor1: #F87575;
+    --cor1: #EA4B71;
     --cor2: #070600;
     --cor3: #333333;
     --cor4: #F7F7FF;
     --cor5: #6E7271;
     --cor6: #849483;
+    --cor7: #636363;
+}
+header{
+    display: flex;
+    flex-flow: column wrap;
+    background-image: url(arquivos/n8n-fluxo-para-header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: end;
+}
+#intro{
+    font-weight: 550;
+    font-size: 6.4em;
+    margin-left: 20px;
+    font-family: 'Inter';
+    color: var(--cor1);
+}
+#preview{
+    text-shadow: 0px 0px 3px var(--cor1);
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    font-family: 'Inter';
+    color: var(--cor4);
+}
+#previewCards{
+    background-image: url(arquivos/gradient-haikei.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card{
+    height: 250px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: start;
+    background-color: var(--cor7);
+    border-radius: 10px;
+    border: 2px solid var(--cor5);
+    width: 26vw;
+    box-shadow: 0px 0px 5px var(--cor1);
+}
+#automacao{
+    box-shadow: 0px 0px 10px var(--cor1);
+    transform: translateY(-30px);
+    scale: 1.02;
+}
+#imagem1, #imagem2, #imagem3{
+    justify-self: flex-end;
+    align-self: flex-end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+}
+.card>h2{
+    padding: 10px;
+    font-family: 'Inter';
+    color: var(--cor4);
+}
+.texto>p{
+    padding: 10px;
+    font-family: 'Montserrat';
+    color: var(--cor4);
+}
+#imagem1{
+    background-image: url(arquivos/server.svg);
+    background-size: cover;
+}
+#imagem2{
+    background: url(arquivos/ai-chip.svg);
+    background-size: cover;
+}
+#imagem3{
+    background-image: url(arquivos/banco-de-dados.svg);
+    background-size: cover;
 }
