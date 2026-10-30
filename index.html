@@ -9,8 +9,12 @@
   </head>
   <body>
         <header>
-            <h1 id="intro"><span class="digitacao">N</span><span class="digitacao">8</span><span class="digitacao">N</span></h1>
-            <p id="preview">Entenda como funciona</p>
+            <div class="intro" id="tituloHeader">
+                <span class="digitacao">N</span><span class="deBaixoPraCima">8</span><span id="ultimaLetraHeader" class="digitacao">N</span>
+            </div>
+            <div class="intro" id="subtitulo">
+                <span class="digitacao">Entenda</span> <span class="deBaixoPraCima">como</span> <span class="digitacao">funciona</span>
+            </div>
         </header>
         <main>
             <article id="previewCards">
@@ -36,7 +40,7 @@
                 </div>
             </article>
             <article id="fluxo">
-                <div class="cardFluxo">
+                <div class="cardFluxo" id="primeiraDiv">
                     <h2>O que é o n8n</h2>
                     <p>O n8n é uma plataforma de automação que permite conectar diferentes aplicativos, serviços e sistemas em um único fluxo. Com ele, é possível criar processos automáticos usando blocos chamados nodes, que executam ações específicas, como enviar dados, consultar APIs ou processar informações.</p>
                 </div>
@@ -51,14 +55,19 @@
                     <p>Com o n8n, é possível automatizar tarefas como envio de e-mails, processamento de dados, integração com APIs, notificações e atualização de bancos de dados. Ele também permite criar condições e regras para que cada automação tome decisões diferentes dependendo das informações recebidas.</p>
                 </div>
                 <div class="fundo"></div>
-                <div class="cardFluxo">
+                <div class="cardFluxo" id="ultimaDiv">
                     <h2>Por que usar o n8n?</h2>
                     <p>O n8n se destaca pela flexibilidade e pela possibilidade de personalizar as automações. Ele possui uma interface visual, mas também permite utilizar código quando necessário, tornando a ferramenta útil tanto para automações simples quanto para projetos mais complexos.</p>
                 </div>
             </article>
         </main>
         <article id="trocaDeTema">
-
+            <h2>Exemplos de workspace</h2>
+            <article id="imagensDoN8n">
+                <img src="arquivos/automacao-n8n-02.webp" alt="">
+                <img src="arquivos/automacao-n8n-01.png" alt="">
+                <img src="arquivos/automacao-n8n-03.png" alt="">
+            </article>
         </article>
     <script type="module" src="main.js"></script>
   </body>

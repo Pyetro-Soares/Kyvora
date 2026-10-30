@@ -24,14 +24,34 @@ header{
     height: 100vh;
     justify-content: end;
 }
-#intro{
+#tituloHeader>.digitacao{
     font-weight: 550;
     font-size: 6.4em;
     margin-left: 20px;
     font-family: 'Inter';
     color: var(--cor1);
 }
-#preview{
+#tituloHeader>.deBaixoPraCima{
+    font-weight: 550;
+    font-size: 6.4em;
+    margin-left: 20px;
+    font-family: 'Inter';
+    color: var(--cor1);
+}
+.intro{
+    display: flex;
+    flex-flow: row wrap;
+}
+#subtitulo>.digitacao{
+    text-shadow: 0px 0px 3px var(--cor1);
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-bottom: 45px;
+    margin-left: 20px;
+    font-family: 'Inter';
+    color: var(--cor4);
+}
+#subtitulo>.deBaixoPraCima{
     text-shadow: 0px 0px 3px var(--cor1);
     font-weight: 300;
     font-size: 2.5em;
@@ -47,7 +67,7 @@ main{
     background-size: cover;
 }
 #previewCards{
-    height: 500px;
+    height: 700px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -55,7 +75,6 @@ main{
     gap: 10px;
 }
 .card{
-    height: 250px;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -71,7 +90,7 @@ main{
 }
 #automacao{
     transform: translateY(-30px);
-    scale: 1.02;
+    scale: 1.03;
 }
 #imagem1, #imagem2, #imagem3{
     justify-self: flex-end;
@@ -118,11 +137,14 @@ main{
     background-size: cover;
 }
 main>#fluxo{
-    height: 290vh;
+    height: 320vh;
     background-color: transparent;
 }
 .cardFluxo{
-    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--cor5);
     border-radius: 10px;
     border: 2px solid var(--cor5);
@@ -131,7 +153,7 @@ main>#fluxo{
 }
 .cardFluxo>h2{
     font-family: 'Inter';
-    font-weight: 500;
+    font-weight: 550;
     padding: 10px;
 }
 .cardFluxo>p{
@@ -139,14 +161,46 @@ main>#fluxo{
     color: var(--cor3);
     padding: 10px;
 }
+#primeiraDiv{
+    margin-top: 0px;
+}
+#ultimaDiv{
+    margin-bottom: 0px;
+}
 .fundo{
     margin: auto;
-    background-color: var(--cor8);
-    width: 15px;
-    height: 100px;
+    background-color: var(--cor1);
+    width: 10px;
 }
 #trocaDeTema{
     height: 100vh;
-    color: var(--cor2);
+    padding-bottom: 100px;
+    color: var(--cor3);
     background-color: var(--cor5);
+}
+#trocaDeTema>h2{
+    font-weight: 550;
+    font-size: 2.5em;
+    font-family: 'Montserrat';
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: var(--cor8);
+    padding: 3px;
+}
+#imagensDoN8n{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(arquivos/code.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+img{
+    object-fit: contain;
+    width: 25vw;
 }
