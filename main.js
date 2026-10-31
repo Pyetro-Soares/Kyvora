@@ -5,19 +5,16 @@ animate('#preview', {
     duration: 1000,
     rotate: ['260deg', '0deg'],
 })
-
 animate('.digitacao', {
     duration: 700,
     opacity:['0','1'],
     translateY: ['-200%', '0'],
     autoplay: onScroll(),
 })
-
 animate('.deBaixoPraCima',{
     duration: 700,
     translateY: ['200%', '0'],
 })
-
 animate('.card', {
     boxShadow: ['0px 0px 0px #EA4B71','0px 0px 15px #EA4B71'],
     autoplay: onScroll(),
@@ -26,21 +23,45 @@ animate('.card', {
     opacity: [0, 1],
     translateY: ['70%','0']
 })
-
-animate('#automacao',{
+if(window.innerWidth >= 700){
+    animate('#automacao',{
     translateY:'-40%',
 })
-
+}
 animate('.cardFluxo' , {
     autoplay: onScroll(),
     marginTop:'0px',
     marginBottom: '0px',
 })
-
 animate('.fundo', {
     delay:stagger(300),
     borderRadius: ['0px 0px 50% 50%', '0px 0px 0px 0px'],
     boxShadow: ['0px 0px 0px #EA4B71','0px 0px 15px #EA4B71'],
     height:['0px','100px'],
     autoplay:onScroll()
+})
+animate('#primeiraImagem' ,{
+    autoplay: onScroll(),
+    transform: 'translateY(6%)'
+})
+animate('#terceiraImagem',{
+    autoplay:onScroll(),
+    transform: 'translateY(6%)'
+})
+const terceiraImagem = document.querySelector('#terceiraImagem')
+
+terceiraImagem.addEventListener('mouseover' , function(){
+    terceiraImagem.style.zIndex = '102'
+})
+terceiraImagem.addEventListener('mouseout' , function(){
+    terceiraImagem.style.zIndex = '100'
+})
+
+const primeiraImagem = document.querySelector('#primeiraImagem')
+
+primeiraImagem.addEventListener('mouseover' , function(){
+    primeiraImagem.style.zIndex = '102'
+})
+primeiraImagem.addEventListener('mouseout' , function(){
+    primeiraImagem.style.zIndex = '100'
 })
